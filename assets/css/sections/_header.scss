@@ -1,7 +1,11 @@
 .header-top {
   border-bottom: 1px solid rgba(136, 124, 225, 0.502);
-  background-color: black;
+  background-color: transparent;
   color: $primary-color;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999;
   a {
     color: $primary-color;
   }
@@ -61,7 +65,13 @@
 
 .header-bottom {
   padding: 15px 0;
-  background: $navbar-black-color;
+  background: transparent;
+  position: fixed !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 54px;
+  z-index: 999;
+  @include transition(all ease 0.3s);
   nav {
     padding: 0;
     .navbar-nav {
