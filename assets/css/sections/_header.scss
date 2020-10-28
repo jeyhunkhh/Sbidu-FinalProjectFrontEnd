@@ -1,0 +1,110 @@
+.header-top {
+  border-bottom: 1px solid rgba(136, 124, 225, 0.502);
+  background-color: black;
+  color: $primary-color;
+  a {
+    color: $primary-color;
+  }
+  select {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: $primary-color;
+    option {
+      color: $gray-color;
+    }
+  }
+  .basket-user {
+    li {
+      padding: 7px 15px;
+      text-align: center;
+    }
+    .basket {
+      a {
+        width: 50px;
+        line-height: 40px;
+        font-size: 34px;
+        color: $primary-color;
+        height: 40px;
+        position: relative;
+        span {
+          display: flex;
+          justify-content: center;
+          border-radius: 50%;
+          background: #5a4bcc;
+          font-size: 12px;
+          width: 22px;
+          height: 22px;
+          line-height: 22px;
+          position: absolute;
+          right: -5px;
+          top: 10px;
+        }
+      }
+    }
+    .user {
+      padding-right: 0;
+      a {
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        color: $primary-color;
+        background: #5a4bcc;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.header-bottom {
+  padding: 15px 0;
+  background: $navbar-black-color;
+  nav {
+    padding: 0;
+    .navbar-nav {
+      li {
+        a {
+          padding: 10px 15px !important;
+          color: $primary-color;
+          text-transform: capitalize;
+          font-weight: 500;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+    }
+    .search-form {
+      margin-left: 20px;
+      position: relative;
+      input {
+        height: 40px;
+        border-radius: 20px;
+        background-color: rgba(18, 30, 105, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: $primary-color;
+        padding: 0 45px 0 20px;
+        &::placeholder {
+          color: rgb(221, 220, 220);
+          font-size: 16px;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+      .btn-search {
+        position: absolute;
+        background: none;
+        border: none;
+        color: $primary-color;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        text-align: left;
+        i{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
