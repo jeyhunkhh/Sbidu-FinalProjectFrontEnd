@@ -1,1 +1,1 @@
-# Sbidu-FinalProjectFrontEnd
+# Code Academy Final Project - FrontEnd
