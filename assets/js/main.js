@@ -22,6 +22,9 @@ $(document).ready(function () {
       margin: 10,
       nav: true,
       dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
       responsive: {
         0: {
           items: 1,
@@ -34,7 +37,26 @@ $(document).ready(function () {
         },
       },
     });
-    $( ".slider .owl-carousel .owl-prev").html('<i class="flaticon-left-arrow"></i>');
-    $( ".slider .owl-carousel .owl-next").html('<i class="flaticon-right-arrow"></i>');
+    $(".slider .owl-carousel .owl-prev").html(
+      '<i class="flaticon-left-arrow"></i>'
+    );
+    $(".slider .owl-carousel .owl-next").html(
+      '<i class="flaticon-right-arrow"></i>'
+    );
   }
+  // ----- //
+
+  // jQuery countdown //
+  if ($(".time").length) {
+    $(function () {
+      $("[data-countdown]").each(function () {
+        var $this = $(this),
+          finalDate = $(this).data("countdown");
+        $this.countdown(finalDate, function (event) {
+          $this.html(event.strftime("%Dd: %Hh: %Mm: %Ss"));
+        });
+      });
+    });
+  }
+  // ----- //
 });

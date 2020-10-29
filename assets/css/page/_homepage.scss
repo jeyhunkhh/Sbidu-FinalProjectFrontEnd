@@ -1,7 +1,6 @@
 #banner {
-  padding: 150px 0px 120px;
+  padding: 140px 0px 120px;
   position: relative;
-  background-image: url("/assets/img/banner-bg-1.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -85,7 +84,7 @@
           width: unset !important;
           margin: 0px auto 10px;
         }
-        span{
+        span {
           text-transform: uppercase;
           color: $black-color;
           font-weight: 500;
@@ -95,30 +94,183 @@
     }
     .owl-nav {
       position: absolute;
-      top: -25%;
+      top: -23%;
       right: 0;
       @include slider-navs();
     }
   }
 }
 
-#car-auction{
+#car-auction {
   padding: 120px 0px;
   background-color: #f6f9ff;
   overflow: hidden;
-  .title{
-    img{
-     height: 50px;
-     width: auto;
-     margin-right: 30px;
+  position: relative;
+  z-index: 0;
+  .title {
+    margin-bottom: 55px;
+    img {
+      height: 50px;
+      width: auto;
+      margin-right: 30px;
     }
-    .text{
-      p{
+    .text {
+      p {
         margin-top: 5px;
       }
     }
   }
-  .button{
+  .header-button {
     @include section-header-btn();
+  }
+  .auction-item {
+    padding: 10px 10px 30px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    box-shadow: 0px 9px 20px 0px rgba(22, 26, 57, 0.36);
+    margin: 0 auto 30px;
+    .image {
+      position: relative;
+      img {
+        width: 330px;
+        height: 247px;
+        object-fit: cover;
+      }
+      .star {
+        color: #ff7800;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      .hammer {
+        width: 40px;
+        height: 40px;
+        color: #ffffff;
+        line-height: 40px;
+        font-size: 18px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+        text-align: center;
+        background: linear-gradient(135deg, #b122e6 0%, #ff63de 100%);
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.13);
+      }
+    }
+    .auction-content {
+      h5 {
+        margin: 0;
+        line-height: 28px;
+        font-size: 20px;
+        padding: 16px 0;
+      }
+      .bid {
+        border-bottom: 2px dotted #deddf5;
+        border-top: 2px dotted #deddf5;
+        .current-bid {
+          padding: 12px 10px;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 1px;
+            right: -10%;
+            bottom: 15px;
+            top: 15px;
+            background: #bfbee8;
+          }
+          i {
+            line-height: 1;
+            font-size: 36px;
+            color: $green-color;
+          }
+          p {
+            margin: 0;
+            padding-left: 15px;
+            color: $green-color;
+            font-size: 14px;
+            span {
+              font-size: 20px;
+              line-height: 20px;
+              color: $black-color;
+            }
+          }
+        }
+        .buy-now-price {
+          padding: 12px 10px;
+          align-items: center;
+          justify-content: center;
+          i {
+            line-height: 1;
+            font-size: 36px;
+            color: $red-color;
+          }
+          p {
+            margin: 0;
+            padding-left: 15px;
+            color: $red-color;
+            font-size: 14px;
+            span {
+              font-size: 20px;
+              line-height: 20px;
+              color: $black-color;
+            }
+          }
+        }
+      }
+    }
+    .time {
+      font-size: 18px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: "Roboto", sans-serif;
+      .countdown {
+        text-shadow: 0px 5px 3px rgba(245, 49, 127, 0.2);
+        background: linear-gradient(#ff7c6e, #f5317f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      span {
+        text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.19);
+        color: $green-color;
+        padding-left: 35px;
+        border-left: 1px solid #d0cff0;
+      }
+    }
+    .button {
+      a {
+        display: inline-block;
+        color: $primary-color;
+        border-radius: 30px;
+        font-weight: 500;
+        padding: 12px 30px 10px;
+        font-size: 18px;
+        width: 100%;
+        max-width: 230px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        background: -webkit-linear-gradient(90deg, #3da9f5 0%, #683df5 100%);
+        box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+      }
+    }
+  }
+
+  .car-bg {
+    min-width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    img {
+      width: 100%;
+    }
   }
 }
