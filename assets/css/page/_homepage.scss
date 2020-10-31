@@ -422,6 +422,7 @@
 
 #register-for-free {
   padding-top: 120px;
+  overflow: hidden;
   .content {
     background-size: cover;
     background-position: center center;
@@ -605,6 +606,7 @@
 #popular-auctions {
   padding-top: 120px;
   position: relative;
+  overflow: hidden;
   .title {
     margin-bottom: 55px;
     span {
@@ -1025,6 +1027,7 @@
 
 #how-it-works {
   padding-top: 120px;
+  overflow: hidden;
   .bg {
     padding: 40px 60px;
     border-radius: 20px;
@@ -1054,6 +1057,7 @@
 
 #customer-comments {
   padding: 120px 0px;
+  overflow: hidden;
   .title {
     margin-bottom: 55px;
     h1 {

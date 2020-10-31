@@ -18,37 +18,11 @@
       color: $gray-color;
     }
   }
-  .basket-user {
-    li {
-      padding: 7px 15px;
+  .my-account {
+      padding: 7px 0px 7px 15px;
       text-align: center;
-    }
-    .basket {
-      a {
-        width: 50px;
-        line-height: 40px;
-        font-size: 34px;
-        color: $primary-color;
-        height: 40px;
-        position: relative;
-        span {
-          display: flex;
-          justify-content: center;
-          border-radius: 50%;
-          background: #5a4bcc;
-          font-size: 12px;
-          width: 22px;
-          height: 22px;
-          line-height: 22px;
-          position: absolute;
-          right: -5px;
-          top: 10px;
-        }
-      }
-    }
     .user {
       padding-right: 0;
-      a {
         display: flex;
         justify-content: center;
         width: 40px;
@@ -58,8 +32,12 @@
         background: #5a4bcc;
         height: 40px;
         border-radius: 50%;
-      }
+      
     }
+  }
+  .login{
+    font-family: $secondary_font_family;
+    margin-right: 15px;
   }
 }
 
