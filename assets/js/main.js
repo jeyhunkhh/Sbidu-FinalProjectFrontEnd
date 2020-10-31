@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $(window).on("load", function () {
+    $(".img-loader").fadeOut("hide");
+  });
+
   // Navbar move //
   $(window).scroll(function (e) {
     if ($(window).scrollTop() > 0) {
@@ -45,47 +49,47 @@ $(document).ready(function () {
     );
   }
 
-  if( $(".real-estate-slider .owl-carousel").length){
-  $(".real-estate-slider .owl-carousel").owlCarousel({
+  if ($(".real-estate-slider .owl-carousel").length) {
+    $(".real-estate-slider .owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+    });
+    $(".real-estate-slider .owl-carousel .owl-prev").html(
+      '<i class="flaticon-left-arrow"></i>'
+    );
+    $(".real-estate-slider .owl-carousel .owl-next").html(
+      '<i class="flaticon-right-arrow"></i>'
+    );
+    var i = 1;
+    $(".real-estate-slider .owl-carousel .owl-dot").each(function (e) {
+      $(this).html("<span>" + i + "</span>");
+      i++;
+    });
+  }
+
+  $(".customers-slider .owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
-    dots: true,
-    items: 1,
-    autoplay: true,
-    autoplayTimeout: 4000,
-    autoplayHoverPause: true,
-  });
-  $(".real-estate-slider .owl-carousel .owl-prev").html(
-    '<i class="flaticon-left-arrow"></i>'
-  );
-  $(".real-estate-slider .owl-carousel .owl-next").html(
-    '<i class="flaticon-right-arrow"></i>'
-  );
-  var i = 1;
-  $(".real-estate-slider .owl-carousel .owl-dot").each(function (e) {
-    $(this).html("<span>" + i + "</span>");
-    i++;
-  });
-}
-
-$('.customers-slider .owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:false,
-  dots: false,
-  responsive:{
-      0:{
-          items:1
+    nav: false,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
       },
-      600:{
-          items:2
+      600: {
+        items: 2,
       },
-      1000:{
-          items:3
-      }
-  }
-})
+      1000: {
+        items: 3,
+      },
+    },
+  });
   // ----- //
 
   // jQuery countdown //
@@ -101,6 +105,30 @@ $('.customers-slider .owl-carousel').owlCarousel({
     });
   }
   // ----- //
-  
+
+  // Back To Top button //
+  if ($(".back-to-top").length) {
+    $(window).scroll(function (e) {
+      var scroll = $(window).scrollTop();
+      if (scroll > 450) {
+        $(".back-to-top").addClass("show");
+      } else {
+        $(".back-to-top").removeClass("show");
+      }
+    });
+
+    $(".back-to-top").click(function (e) {
+      $("html, body").animate(
+        {
+          scrollTop: $("html").offset().top,
+        },
+        1000
+      );
+    });
+  }
+  // ----- //
 });
-  
+
+$(window).on("load", function () {
+  $(".img-loader").fadeOut("slow");
+});
