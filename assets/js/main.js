@@ -44,6 +44,48 @@ $(document).ready(function () {
       '<i class="flaticon-right-arrow"></i>'
     );
   }
+
+  if( $(".real-estate-slider .owl-carousel").length){
+  $(".real-estate-slider .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+  });
+  $(".real-estate-slider .owl-carousel .owl-prev").html(
+    '<i class="flaticon-left-arrow"></i>'
+  );
+  $(".real-estate-slider .owl-carousel .owl-next").html(
+    '<i class="flaticon-right-arrow"></i>'
+  );
+  var i = 1;
+  $(".real-estate-slider .owl-carousel .owl-dot").each(function (e) {
+    $(this).html("<span>" + i + "</span>");
+    i++;
+  });
+}
+
+$('.customers-slider .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  dots: false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+})
   // ----- //
 
   // jQuery countdown //
@@ -59,4 +101,6 @@ $(document).ready(function () {
     });
   }
   // ----- //
+  
 });
+  
