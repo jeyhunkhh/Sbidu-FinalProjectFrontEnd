@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 27/10/2020 09:35
+  	Creation date: 01/11/2020 15:44
   	*/
 
 @font-face {
@@ -42,3 +42,9 @@ font-style: normal;
 .flaticon-edit:before { content: "\f10b"; }
 .flaticon-check:before { content: "\f10c"; }
 .flaticon-trophy:before { content: "\f10d"; }
+.flaticon-wristwatch:before { content: "\f10e"; }
+.flaticon-camera:before { content: "\f10f"; }
+.flaticon-condominium:before { content: "\f110"; }
+.flaticon-paint-board-and-brush:before { content: "\f111"; }
+.flaticon-dollar:before { content: "\f112"; }
+.flaticon-football-ball:before { content: "\f113"; }
