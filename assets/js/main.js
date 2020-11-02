@@ -127,7 +127,17 @@ $(document).ready(function () {
     });
   }
   // ----- //
+
+ // countTo.js and move-start
+ if ($(".my-bids").length) {
+      if ($(".my-bids").hasClass("start")) {
+        $(".timer").countTo();
+        $(".my-bids").removeClass("start");
+      }
+}
+// ----- //
 });
+
 
 $(window).on("load", function () {
   $(".img-loader").fadeOut("slow");
