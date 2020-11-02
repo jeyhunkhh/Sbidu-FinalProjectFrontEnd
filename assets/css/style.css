@@ -2446,4 +2446,327 @@ footer .footer-bg {
   color: #ffffff;
   background: linear-gradient(166deg, #f22876 0%, #942dd9 100%);
 }
+
+#dashboard {
+  margin-top: -440px;
+}
+
+#dashboard .user-menu {
+  border-radius: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+          box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+  padding: 30px;
+}
+
+#dashboard .user-menu .user {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#dashboard .user-menu .user .image {
+  width: 100px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+#dashboard .user-menu .user .image img {
+  height: 100px;
+  width: 100px;
+}
+
+#dashboard .user-menu .user .image label {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: 0;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #8739e6 0%, #5496ff 100%);
+  cursor: pointer;
+}
+
+#dashboard .user-menu .user h4 {
+  color: #37406f;
+}
+
+#dashboard .user-menu .menu li a {
+  padding: 10px 20px;
+  color: #37406f;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 30px;
+  border-radius: 25px;
+  display: block;
+}
+
+#dashboard .user-menu .menu li a:hover {
+  background: #f7f6fc;
+}
+
+#dashboard .user-menu .menu li a.active {
+  background: #f7f6fc;
+}
+
+#dashboard .user-menu .menu li a i {
+  font-weight: 400;
+  margin-right: 10px;
+  color: #ee4730;
+}
+
+#dashboard .my-bids .activity {
+  border-radius: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+          box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+#dashboard .my-bids .activity .title {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d5d7f3;
+}
+
+#dashboard .my-bids .activity .title h4 {
+  padding-bottom: 20px;
+  color: #37406f;
+}
+
+#dashboard .my-bids .activity .item {
+  border-radius: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 2.487px 1.678px 57px 0px rgba(16, 5, 54, 0.13);
+          box-shadow: 2.487px 1.678px 57px 0px rgba(16, 5, 54, 0.13);
+  padding: 40px 15px 30px;
+  text-align: center;
+}
+
+#dashboard .my-bids .activity .item .image {
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+#dashboard .my-bids .activity .item .content {
+  color: #37406f;
+  font: "Roboto", sans-serif;
+}
+
+#dashboard .my-bids .activity .item .content .timer {
+  font-size: 42px;
+  line-height: 50px;
+  margin-top: -10px;
+  font-weight: 700;
+}
+
+#dashboard .my-bids .activity .item .content span {
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: -5px;
+  font-weight: 600;
+}
+
+#dashboard .my-bids .activity ul li {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+#dashboard .my-bids .activity ul li a {
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 12px 30px 10px;
+  font-size: 18px;
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#3da9f5), to(#683df5));
+  background: linear-gradient(90deg, #3da9f5 0%, #683df5 100%);
+  -webkit-box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+          box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+#dashboard .my-bids .activity ul li .active {
+  background: linear-gradient(92deg, #ff8359 0%, #ffdf40 100%);
+}
+
+#dashboard .my-bids .activity ul li .past {
+  margin-left: 20px;
+}
+
+#dashboard .my-bids .tab-content .auction-item {
+  padding: 10px 10px 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 9px 20px 0px rgba(22, 26, 57, 0.36);
+          box-shadow: 0px 9px 20px 0px rgba(22, 26, 57, 0.36);
+  margin: 0 auto 30px;
+}
+
+#dashboard .my-bids .tab-content .auction-item .image {
+  position: relative;
+}
+
+#dashboard .my-bids .tab-content .auction-item .image img {
+  width: 330px;
+  height: 247px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#dashboard .my-bids .tab-content .auction-item .image .star {
+  color: #ff7800;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#dashboard .my-bids .tab-content .auction-item .image .hammer {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  line-height: 40px;
+  font-size: 18px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background: linear-gradient(135deg, #b122e6 0%, #ff63de 100%);
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.13);
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content h5 {
+  margin: 0;
+  line-height: 28px;
+  font-size: 20px;
+  padding: 16px 0;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid {
+  border-bottom: 2px dotted #deddf5;
+  border-top: 2px dotted #deddf5;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .current-bid {
+  padding: 12px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .current-bid::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  right: -10%;
+  bottom: 15px;
+  top: 15px;
+  background: #bfbee8;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .current-bid i {
+  line-height: 1;
+  font-size: 36px;
+  color: #43b055;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .current-bid p {
+  margin: 0;
+  padding-left: 15px;
+  color: #43b055;
+  font-size: 14px;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .current-bid p span {
+  font-size: 20px;
+  line-height: 20px;
+  color: #171d1c;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .buy-now-price {
+  padding: 12px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .buy-now-price i {
+  line-height: 1;
+  font-size: 36px;
+  color: #ee4730;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .buy-now-price p {
+  margin: 0;
+  padding-left: 15px;
+  color: #ee4730;
+  font-size: 14px;
+}
+
+#dashboard .my-bids .tab-content .auction-item .auction-content .bid .buy-now-price p span {
+  font-size: 20px;
+  line-height: 20px;
+  color: #171d1c;
+}
+
+#dashboard .my-bids .tab-content .auction-item .time {
+  font-size: 18px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+#dashboard .my-bids .tab-content .auction-item .time .countdown {
+  text-shadow: 0px 5px 3px rgba(245, 49, 127, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7c6e), to(#f5317f));
+  background: linear-gradient(#ff7c6e, #f5317f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#dashboard .my-bids .tab-content .auction-item .time span {
+  text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.19);
+  color: #43b055;
+  padding-left: 35px;
+  border-left: 1px solid #d0cff0;
+}
+
+#dashboard .my-bids .tab-content .auction-item .button a {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 12px 30px 10px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 230px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-linear-gradient(90deg, #3da9f5 0%, #683df5 100%);
+  -webkit-box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+          box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+}
 /*# sourceMappingURL=style.css.map */
