@@ -73,23 +73,25 @@ $(document).ready(function () {
     });
   }
 
-  $(".customers-slider .owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1,
+  if ($(".customers-slider").length) {
+    $(".customers-slider .owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
       },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  });
+    });
+  }
   // ----- //
 
   // jQuery countdown //
@@ -147,6 +149,54 @@ $(document).ready(function () {
     });
   }
   // ----- //
+
+  //Slick Sliders //
+  if ($(".details-slider").length) {
+    $(".slider-for").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: false,
+      asNavFor: ".slider-nav",
+    });
+    $(".slider-nav").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: ".slider-for",
+      centerMode: true,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
+    });
+  }
+  // ----- //
+  
 });
 
 $(window).on("load", function () {
