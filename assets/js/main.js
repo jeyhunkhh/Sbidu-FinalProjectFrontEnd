@@ -148,6 +148,17 @@ $(document).ready(function () {
       }
     });
   }
+
+  if ($(".details-content").length) {
+    $(window).scroll(function (e) {
+      if ($(window).scrollTop() >= 590) {
+        if ($(".items-area").hasClass("start")) {
+          $(".timer").countTo();
+          $(".items-area").removeClass("start");
+        }
+      }
+    });
+  }
   // ----- //
 
   //Slick Sliders //
@@ -193,6 +204,15 @@ $(document).ready(function () {
         // settings: "unslick"
         // instead of a settings object
       ],
+    });
+  }
+  // ----- //
+
+  // Frequently Asked Questions Hide/Show //
+  if ($("#questions").length) {
+    $(".faq-title").click(function () {
+      $(this).next().slideToggle();
+      $(this).parent().toggleClass("open");
     });
   }
   // ----- //
