@@ -4164,4 +4164,106 @@ footer .footer-bg {
   -webkit-transform: translate(-50%, -50%) rotate(90deg);
           transform: translate(-50%, -50%) rotate(90deg);
 }
+
+#contact-form {
+  margin-top: -440px;
+  padding-bottom: 120px;
+}
+
+#contact-form .bg {
+  padding: 120px 0px;
+  padding-left: 40px;
+  position: relative;
+  background: #ffffff;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+          box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+}
+
+#contact-form .header {
+  margin-bottom: 55px;
+}
+
+#contact-form .header h4 {
+  margin-bottom: 10px;
+  color: #3f22b3;
+  font-weight: 500;
+}
+
+#contact-form .header h1 {
+  margin-bottom: 5px;
+}
+
+#contact-form form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#contact-form form .form-group input {
+  height: 60px;
+  padding: 0 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #bccaea;
+  border-radius: 0;
+}
+
+#contact-form form .form-group input:focus {
+  border-bottom: 1px solid #3f22b3;
+  outline: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#contact-form form .form-group label {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(166deg, #f22876 0%, #942dd9 100%);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(162, 44, 202, 0.3);
+          box-shadow: 0px 3px 5px 0px rgba(162, 44, 202, 0.3);
+  color: #ffffff;
+  top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#contact-form form .form-group textarea {
+  padding: 5px 50px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #bccaea;
+  border-radius: 0;
+  height: 200px;
+  resize: none;
+  width: 100%;
+  outline: none;
+}
+
+#contact-form form .form-group textarea:focus {
+  border-bottom: 1px solid #3f22b3;
+}
+
+#contact-form form .form-group button {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 12px 30px 10px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 230px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-linear-gradient(90deg, #3da9f5 0%, #683df5 100%);
+  -webkit-box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+          box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+  border: none;
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */
