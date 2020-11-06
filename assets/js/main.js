@@ -217,6 +217,16 @@ $(document).ready(function () {
   }
   // ----- //
   
+  if($("#login").length || $("#register").length){
+    $(".show-password").click(function(){
+      if($("#password").attr("type")=="password"){
+        $("#password").attr("type", "text")
+      }else{
+        $("#password").attr("type", "password")
+      }
+    });
+  }
+
 });
 
 $(window).on("load", function () {

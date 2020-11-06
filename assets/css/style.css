@@ -4266,4 +4266,253 @@ footer .footer-bg {
   border: none;
   font-size: 16px;
 }
+
+#login {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+#login .account {
+  margin-top: -440px;
+}
+
+#login .account .left-side {
+  padding: 60px 30px 60px 60px;
+  width: 70%;
+  background: #ffffff;
+  border-radius: 10px 0px 0px 10px;
+  -webkit-box-shadow: 0 0 15px rgba(44, 46, 69, 0.11);
+          box-shadow: 0 0 15px rgba(44, 46, 69, 0.11);
+}
+
+#login .account .left-side .header {
+  margin-bottom: 55px;
+}
+
+#login .account .left-side form .form-group {
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+}
+
+#login .account .left-side form .form-group:first-child {
+  margin-bottom: 30px;
+}
+
+#login .account .left-side form .form-group input {
+  height: 50px;
+  border: 1px solid rgba(97, 90, 191, 0.2);
+  background: #ffffff;
+  padding: 0 75px;
+}
+
+#login .account .left-side form .form-group input:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#login .account .left-side form .form-group label {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#login .account .left-side form .form-group span {
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  cursor: pointer;
+}
+
+#login .account .left-side form .form-group a {
+  color: #52606d;
+}
+
+#login .account .left-side form .form-group button {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 12px 30px 10px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 230px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-linear-gradient(90deg, #3da9f5 0%, #683df5 100%);
+  -webkit-box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+          box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+  border: none;
+}
+
+#login .account .right-side {
+  background: -webkit-linear-gradient(90deg, #5140fe 0%, #7757f7 56%, #9d6ef0 100%);
+  border-radius: 0 10px 10px 0;
+  width: 30%;
+  padding: 60px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#login .account .right-side h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+#login .account .right-side p {
+  color: #ffffffe6;
+  margin-bottom: 20px;
+}
+
+#login .account .right-side a {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 12px 30px 10px;
+  font-size: 18px;
+  -webkit-box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+          box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+  font-family: "Roboto", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 400;
+}
+
+#register {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+#register .account {
+  margin-top: -440px;
+}
+
+#register .account .left-side {
+  padding: 60px 30px 60px 60px;
+  width: 70%;
+  background: #ffffff;
+  border-radius: 10px 0px 0px 10px;
+  -webkit-box-shadow: 0 0 15px rgba(44, 46, 69, 0.11);
+          box-shadow: 0 0 15px rgba(44, 46, 69, 0.11);
+}
+
+#register .account .left-side .header {
+  margin-bottom: 55px;
+}
+
+#register .account .left-side form .form-group {
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+}
+
+#register .account .left-side form .form-group:first-child {
+  margin-bottom: 30px;
+}
+
+#register .account .left-side form .form-group input {
+  height: 50px;
+  border: 1px solid rgba(97, 90, 191, 0.2);
+  background: #ffffff;
+  padding: 0 75px;
+}
+
+#register .account .left-side form .form-group input:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#register .account .left-side form .form-group label {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#register .account .left-side form .form-group span {
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  cursor: pointer;
+}
+
+#register .account .left-side form .form-group a {
+  color: #52606d;
+}
+
+#register .account .left-side form .form-group button {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 12px 30px 10px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 230px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-linear-gradient(90deg, #3da9f5 0%, #683df5 100%);
+  -webkit-box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+          box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+  border: none;
+}
+
+#register .account .right-side {
+  background: -webkit-linear-gradient(90deg, #5140fe 0%, #7757f7 56%, #9d6ef0 100%);
+  border-radius: 0 10px 10px 0;
+  width: 30%;
+  padding: 60px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#register .account .right-side h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 18px;
+  line-height: 46px;
+}
+
+#register .account .right-side p {
+  color: #ffffffe6;
+  margin-bottom: 20px;
+}
+
+#register .account .right-side a {
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 12px 30px 10px;
+  font-size: 18px;
+  -webkit-box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+          box-shadow: -1.04px 4.891px 20px 0px rgba(69, 49, 183, 0.5);
+  font-family: "Roboto", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */
