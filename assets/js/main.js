@@ -19,6 +19,25 @@ $(document).ready(function () {
   });
   // ----- //
 
+  // Navbar responsive //
+  if ($(".header-bottom").length) {
+    $(".navbar-toggler").click(function () {
+      if ($(".navbar-toggler-icon").hasClass("fa-bars")) {
+        $("body").css("overflow", "hidden");
+        $(".navbar-toggler-icon").removeClass("fa-bars").addClass("fa-times");
+      } else {
+        $(".navbar-toggler-icon").removeClass("fa-times").addClass("fa-bars");
+        $("body").css("overflow", "scroll");
+        $(".dropdown").find(".hover-menu").slideUp();
+      }
+    });
+
+    $(".search-nav .icon").click(function () {
+      $(this).next().slideToggle("slow");
+    });
+  }
+  // ----- //
+
   // Owl carousel 2//
   if ($(".slider .owl-carousel").length) {
     $(".slider .owl-carousel").owlCarousel({
@@ -37,6 +56,9 @@ $(document).ready(function () {
           items: 3,
         },
         1000: {
+          items: 5,
+        },
+        1199: {
           items: 6,
         },
       },
@@ -216,17 +238,16 @@ $(document).ready(function () {
     });
   }
   // ----- //
-  
-  if($("#login").length || $("#register").length){
-    $(".show-password").click(function(){
-      if($("#password").attr("type")=="password"){
-        $("#password").attr("type", "text")
-      }else{
-        $("#password").attr("type", "password")
+
+  if ($("#login").length || $("#register").length) {
+    $(".show-password").click(function () {
+      if ($("#password").attr("type") == "password") {
+        $("#password").attr("type", "text");
+      } else {
+        $("#password").attr("type", "password");
       }
     });
   }
-
 });
 
 $(window).on("load", function () {
